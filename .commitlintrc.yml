@@ -1,0 +1,21 @@
+# 0 - off
+# 1 - warning
+# 2 - error
+
+rules:
+  # type
+  type-case: [2, 'always', 'lower-case']
+  type-empty: [2, 'never']
+  type-enum: [2, 'always', [
+    'build', 'ci', 'chore', 'docs', 'feat', 'fix', 'perf', 'refactor', 'revert', 'style', 'test'
+  ]]
+  # subject
+  subject-case: [2, 'always', 'sentence-case']
+  subject-empty: [2, 'never']
+  subject-full-stop: [2, 'never', '.']
+  # body
+  body-case: [2, 'always', 'sentence-case']
+  body-leading-blank: [2, 'always']
+  body-full-stop: [2, 'never', '.']
+  # footer
+  footer-leading-blank: [2, 'always']
