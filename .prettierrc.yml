@@ -10,5 +10,5 @@ bracketSpacing: true
 bracketSameLine: false
 arrowParens: 'always'
 endOfLine: 'lf'
-importOrder: ['react|next/(.*)', '^@mui/(.*)', '<THIRD_PARTY_MODULES>', '/components/(.*)', '(.)+/']
+importOrder: ['^react$|next/(.*)', '^@mui/(.*)', '^@emotion/(.*)', '<THIRD_PARTY_MODULES>', '/components/(.*)', '(.)+/']
 importOrderSeparation: true
