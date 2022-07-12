@@ -2,11 +2,13 @@
 # 1 - warning
 # 2 - error
 
-extends: ['next/core-web-vitals', 'standard', 'prettier']
+extends: ['next/core-web-vitals', 'standard', 'prettier', 'plugin:jsx-a11y/strict']
 
 rules:
-  indent: [ 2, 'tab' ]
-  no-tabs: [ 2, { allowIndentationTabs: true } ]
+  indent: [2, 'tab']
+  no-tabs: [2, { allowIndentationTabs: true }]
   space-before-function-paren: [2, 'never']
   react/jsx-filename-extension: [2, { extensions: ['.jsx'] }]
+  react/jsx-curly-brace-presence: [2, 'never']
+  react/jsx-max-props-per-line: ['error', { maximum: 4, when: 'always' }]
   react-hooks/exhaustive-deps: 2
