@@ -2,7 +2,7 @@
 # 1 - warning
 # 2 - error
 
-extends: ['next/core-web-vitals', 'standard']
+extends: ['next/core-web-vitals', 'standard', 'prettier']
 
 rules:
   indent: [ 2, 'tab' ]
