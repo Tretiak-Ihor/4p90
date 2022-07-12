@@ -9,12 +9,12 @@
     "lint": "next lint",
     "reinstall": "rm -rf node_modules && npm i --prefer-offline"
   },
-	"lint-staged": {
-		"**/*.{js,jsx}": [
-			"prettier --write",
-			"eslint --fix"
-		]
-	},
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
   "dependencies": {
     "next": "12.2.2",
     "react": "18.2.0",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.0.3",
     "@commitlint/config-conventional": "17.0.3",
+    "@trivago/prettier-plugin-sort-imports": "3.2.0",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.2",
     "eslint-config-prettier": "8.5.0",
