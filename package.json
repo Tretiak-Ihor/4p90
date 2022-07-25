@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
+		"dev": "layer0 dev",
+		"build": "layer0 build",
+		"deploy": "layer0 deploy",
+		"lint": "next lint",
     "reinstall": "rm -rf node_modules && npm i --prefer-offline"
   },
   "lint-staged": {
@@ -27,6 +27,12 @@
   "devDependencies": {
     "@commitlint/cli": "17.0.3",
     "@commitlint/config-conventional": "17.0.3",
+    "@layer0/cli": "4.17.0",
+    "@layer0/core": "4.17.0",
+    "@layer0/devtools": "4.17.0",
+    "@layer0/next": "4.17.0",
+    "@layer0/prefetch": "4.17.0",
+    "@layer0/react": "4.17.0",
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.2",
