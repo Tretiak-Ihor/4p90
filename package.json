@@ -6,6 +6,8 @@
 		"dev": "layer0 dev",
 		"build": "layer0 build",
 		"deploy": "layer0 deploy",
+		"deploy:dev": "layer0 deploy --site=4p90.com --environment=development",
+		"deploy:prod": "layer0 deploy --site=4p90.com --environment=production",
 		"lint": "next lint",
     "reinstall": "rm -rf node_modules && npm i --prefer-offline"
   },
