@@ -1,0 +1,43 @@
+{
+  "scripts": {
+    "start": "layer0 run",
+    "layer0:build": "layer0 build",
+    "prod": "layer0 run --production",
+    "deploy": "layer0 deploy --site=4p90",
+    "deploy:dev": "layer0 deploy --site=4p90 --environment=development",
+    "deploy:prod": "layer0 deploy --site=4p90 --environment=production",
+    "reinstall": "rm -rf node_modules && npm i --prefer-offline"
+  },
+  "name": "4p90",
+  "version": "0.1.0",
+  "private": true,
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "next": "13.0.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@layer0/cli": "4.19.5",
+    "@layer0/core": "4.19.5",
+    "@layer0/devtools": "4.19.5",
+    "@layer0/next": "4.19.5",
+    "@layer0/prefetch": "4.19.5",
+    "@layer0/react": "4.19.5",
+    "@layer0/rum": "3.1.0",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.6",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-n": "15.5.1",
+    "eslint-plugin-promise": "6.1.1",
+    "husky": "8.0.2",
+    "lint-staged": "13.0.4",
+    "prettier": "2.8.0"
+  }
+}
