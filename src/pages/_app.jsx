@@ -2,10 +2,12 @@ import '../../layer0/core-web-vitals-metrics'
 import NextApp from 'next/app'
 import { AppConfigProvider } from '../shared/context/app-config'
 import { getApiUrlFromRequest } from '../shared/helpers'
+import { GoogleTagManager } from '../modules/google-tag-manager/components/google-tag-manager'
 
 const App = ({ Component, pageProps, appConfig }) => {
   return (
     <AppConfigProvider data={appConfig}>
+      <GoogleTagManager container="dataLayer" />
       <Component {...pageProps} />
     </AppConfigProvider>
   )
